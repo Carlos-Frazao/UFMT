@@ -28,4 +28,4 @@ Este repositório é para meus estudos, projetos e atividades práticas desenvol
 * **Trabalho-Prog02 (Foguete):** Implementação de lógica de programação aplicada.
 
 ---
-*Mantido por [Seu Nome] - Estudante de Ciência da Computação (UFMT) e ADS (Unicathedral).*
+*Carlos Eduardo - Estudante de Ciência da Computação (UFMT) e Análise e Desenvolvimento de Sistemas (UniCathedral).*
