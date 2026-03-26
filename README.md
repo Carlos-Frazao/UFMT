@@ -20,7 +20,7 @@ Este repositório é para meus estudos, projetos e atividades práticas desenvol
 | **2º Semestre** | Estrutura de Dados I, Programação de computadores II | C / C++ |
 | **3º Semestre** | Estrutura de Dados I, Programação de computadores IV | C / C++ |
 | **?º Semestre**| ??? | ??? 
-Teste [Atividades de Programação IV](./3-semestre/programacao-iv/)
+Teste [Atividades de Programação IV](./3-semestre/programacao-lv/)
 
 ---
 
