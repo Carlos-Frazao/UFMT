@@ -18,7 +18,7 @@ Este repositório é para meus estudos, projetos e atividades práticas desenvol
 | :--- | :--- | :--- |
 | **1º Semestre** | Algoritmos e Programação de computadores I | Portugol / Python |
 | **2º Semestre** | Estrutura de Dados I, Programação de computadores II | C / C++ |
-| **3º Semestre** | Estrutura de Dados I, Programação de computadores II, Programação de computadores IV <br><br> [🔗Atividades de Programação IV](./3-semestre/prog-lv/) | C / C++ / HTML / CSS / JS |
+| **3º Semestre** | Estrutura de Dados I, Programação de computadores II, <br><br> [Programação de computadores IV](./3-semestre/prog-lv/) | C / C++ / HTML, CSS, JS |
 | **?º Semestre**| ??? | ??? |
 
 ---
