@@ -1,20 +1,20 @@
-# 🎓 Jornada Acadêmica - [UFMT](https://www.ufmt.br/campus/araguaia)
+# Jornada Acadêmica - [UFMT](https://www.ufmt.br/campus/araguaia)
 ## Ciência da Computação
 
 Este repositório é para meus estudos, projetos e atividades práticas desenvolvidos na **Universidade Federal de Mato Grosso (UFMT)**. A organização é feita por semestres para facilitar o acompanhamento da minha evolução técnica.
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 * **Linguagens:** C, C++, Python.
 * **Conceitos:** Algoritmos, Estrutura de Dados, Análise de Dados e Lógica Digital.
 * **Ambiente:** VS Code e controle de versão via Git/GitHub.
 
 ---
 
-## 📅 Organização por Semestre
+## Organização por Semestre
 
-| Semestre | Principais Disciplinas Práticas / Projetos | Tecnologias |
+| Semestre | Principais Disciplinas Práticas | Tecnologias |
 | :---: | :---: | :---: |
 | **1º Semestre** | Algoritmos e Progrmação de computadores I | Portugol / Python |
 | **2º Semestre** | Estrutura de Dados I, Programação de computadores II | C / C++ |
@@ -23,7 +23,7 @@ Este repositório é para meus estudos, projetos e atividades práticas desenvol
 
 ---
 
-## 📌 Projetos em Destaque
+## Projetos em Destaque
 * **Trabalho-Prog01:** Análise exploratória de dados realizada no primeiro semestre.
 * **Trabalho-Prog02 (Foguete):** Implementação de lógica de programação aplicada.
 
