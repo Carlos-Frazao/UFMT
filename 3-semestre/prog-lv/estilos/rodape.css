@@ -1,0 +1,8 @@
+.rodape {
+    color: rgb(246, 243, 243);
+    /* Abaixar o rodapé para o final da página*/
+    position: fixed;
+    /*width: 50px;*/
+    bottom: 0;
+    padding: 10px
+}
