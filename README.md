@@ -1,4 +1,4 @@
-# 🎓 Jornada Acadêmica - UFMT
+# 🎓 Jornada Acadêmica - [UFMT](https://www.ufmt.br/campus/araguaia)
 ## Ciência da Computação
 
 Este repositório é para meus estudos, projetos e atividades práticas desenvolvidos na **Universidade Federal de Mato Grosso (UFMT)**. A organização é feita por semestres para facilitar o acompanhamento da minha evolução técnica.
