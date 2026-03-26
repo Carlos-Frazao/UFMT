@@ -15,7 +15,7 @@ Este repositório é para meus estudos, projetos e atividades práticas desenvol
 ## 📅 Organização por Semestre
 
 | Semestre | Principais Disciplinas Práticas / Projetos | Tecnologias |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | **1º Semestre** | Algoritmos e Progrmação de computadores I | Portugol / Python |
 | **2º Semestre** | Estrutura de Dados I, Programação de computadores II | C / C++ |
 | **3º Semestre** | Estrutura de Dados I, Programação de computadores II, [Programação de computadores IV](./3-semestre/prog-lv/) | C / C++ / HTML, CSS, JS |
