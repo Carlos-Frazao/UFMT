@@ -1,3 +1,5 @@
+<link rel="icon" type="image/png" href="./favicon.png">
+
 # Jornada Acadêmica - [UFMT](https://www.ufmt.br/campus/araguaia)
 ## Ciência da Computação
 
