@@ -2,7 +2,7 @@
 <script>
   var favicon = document.createElement('link');
   favicon.rel = 'icon';
-  favicon.href = './UFMT/favicon.png';
+  favicon.href = './favicon.png';
   document.head.appendChild(favicon);
 </script>
 
