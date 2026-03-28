@@ -2,7 +2,7 @@
 <script>
   var favicon = document.createElement('link');
   favicon.rel = 'icon';
-  favicon.href = './favicon.png';
+  favicon.href = './UFMT/favicon.png';
   document.head.appendChild(favicon);
 </script>
 
@@ -24,7 +24,7 @@ Este repositório é para meus estudos, projetos e atividades práticas desenvol
 
 | Semestre | Principais Disciplinas Práticas | Tecnologias |
 | :---: | :---: | :---: |
-| **1º Semestre** | Algoritmos e Progrmação de computadores I | Portugol / Python |
+| **1º Semestre** | Algoritmos e Programação de computadores I | Portugol / Python |
 | **2º Semestre** | Estrutura de Dados I, Programação de computadores II | C / C++ |
 | **3º Semestre** | Estrutura de Dados I, [Programação de computadores II](./3-semestre/prog-II), [Programação de computadores IV](./3-semestre/prog-IV/) | C / C++ / HTML, CSS, JS |
 | **?º Semestre**| ??? | ??? |
