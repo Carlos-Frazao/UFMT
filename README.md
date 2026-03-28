@@ -1,4 +1,10 @@
-<link rel="icon" type="image/png" href="./favicon.png">
+<!--Gambiarra para colcar um icone no readme, ele injeta o icon no head-->
+<script>
+  var favicon = document.createElement('link');
+  favicon.rel = 'icon';
+  favicon.href = './favicon.png';
+  document.head.appendChild(favicon);
+</script>
 
 # Jornada Acadêmica - [UFMT](https://www.ufmt.br/campus/araguaia)
 ## Ciência da Computação
