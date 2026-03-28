@@ -2,7 +2,7 @@
 <script>
   var favicon = document.createElement('link');
   favicon.rel = 'icon';
-  favicon.href = './favicon.png';
+  favicon.href = './computador.png';
   document.head.appendChild(favicon);
 </script>
 
