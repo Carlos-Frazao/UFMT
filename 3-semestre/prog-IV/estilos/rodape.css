@@ -5,4 +5,8 @@
     background-color: rgba(0, 0, 0, 0.8); /* Fundo preto quase sólido */
     margin-top: 50px; /* Dá um respiro entre o conteúdo e o final da página */
     font-size: 14px;
+    position: fixed; /* Fixa o elemento na tela */
+    bottom: 0;       /* Cola no limite de baixo (zero distância) */
+    left: 0;         /* Cola na esquerda */
+    width: 100%;     /* Faz a faixa ir de ponta a ponta */
 }

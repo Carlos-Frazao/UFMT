@@ -1,14 +1,27 @@
 .conteudo {
     text-align: center;
-    color: rgb(242, 242, 246);
+    color: #eeeeee;
+    
+    /* Adicionando o fundo escuro transparente */
+    background-color: rgba(0, 0, 0, 0.65); 
+    padding: 20px;
+    border-radius: 12px;
+    
+    /* Centraliza a caixa e limita o tamanho */
+    margin: 20px auto; 
+    width: 90%; 
+    max-width: 800px; 
+    
+    /* Sombrinha pra destacar */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /* Ajuda a ler melhor */
 }
 
 body {
-    background-image: url('https://i.pinimg.com/1200x/f4/ee/63/f4ee63a90de1c75844f1aa8a193c11a8.jpg');
     background-size: cover;
 
     /* Configurações para a imagem ficar perfeita */
-    background-size: cover;          /* Cobre toda a tela */
+              /* Cobre toda a tela */
     background-position: center;     /* Centraliza a imagem, focando no meio dela */
     background-repeat: no-repeat;    /* Impede que a imagem crie "ladrilhos" se a tela for muito grande */
     background-attachment: fixed;    /* Deixa o fundo fixo. Se a página rolar para baixo, a imagem fica parada */
