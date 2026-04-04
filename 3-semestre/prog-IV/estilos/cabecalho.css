@@ -1,5 +1,9 @@
 .cabecalho {
-    font: 25px Arial, Helvetica, sans-serif;
+    color: #ffffff; /* Trocamos o vermelho por branco */
     text-align: center;
-    color: red;
+    padding: 30px 10px;
+    font-size: 26px;
+    font-weight: bold;
+    /* A sombra abaixo é o segredo para o texto não sumir no fundo! */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); 
 }

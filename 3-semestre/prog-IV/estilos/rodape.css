@@ -1,8 +1,8 @@
 .rodape {
-    color: rgb(246, 243, 243);
-    /* Abaixar o rodapé para o final da página*/
-    position: fixed;
-    /*width: 50px;*/
-    bottom: 0;
-    padding: 10px
+    color: #aaaaaa; /* Cinza claro, não chama tanta atenção */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto quase sólido */
+    margin-top: 50px; /* Dá um respiro entre o conteúdo e o final da página */
+    font-size: 14px;
 }
