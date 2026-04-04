@@ -1,0 +1,17 @@
+.rodape {
+    background-color: rgba(0, 0, 0, 0.85); /* Fundo bem escuro pra dar contraste */
+    color: #888888; /* Um cinza discreto pro texto */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    
+    /* Isso aqui faz ele colar no fundo da tela */
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.rodape p {
+    margin: 0; /* Tira aquele espaço extra que o parágrafo cria sozinho */
+}

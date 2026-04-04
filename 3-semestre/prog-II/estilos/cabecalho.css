@@ -1,8 +1,8 @@
-body {
-    background: pink;
-}
 .cabecalho {
-    font: 25px Arial, Helvetica, sans-serif;
-    color: red;
+    color: #ffffff;
     text-align: center;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombreado para leitura */
 }

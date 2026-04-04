@@ -1,0 +1,18 @@
+body {
+    background: black;
+    background-image: url('https://icons.veryicon.com/png/o/business/vscode-program-item-icon/cpp-2.png');
+    /* Configurações para domar o logo gigante: */
+    background-repeat: no-repeat;      /* Impede que a imagem se multiplique */
+    background-position: center;       /* Centraliza o logo na tela */
+    background-attachment: fixed;      /* Deixa o fundo parado ao rolar a página */
+    background-size: 50%;              /* Diminui o logo (ajuste essa % como achar melhor) */
+    
+    /* Cor de fundo escura para preencher o resto da tela */
+    background-color: #121214;         
+    
+    /* Configurações gerais de texto */
+    color: #e0e0e0; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}

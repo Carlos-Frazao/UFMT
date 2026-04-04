@@ -1,0 +1,39 @@
+.aulas {
+    text-align: center; /* Centraliza os textos e os links */
+    background-color: rgba(0, 0, 0, 0.65); /* Fundo preto com 65% de transparência */
+    padding: 25px;
+    border-radius: 12px; /* Deixa as bordas arredondadas, bem moderno */
+    
+    /* Esses dois comandos abaixo centralizam a CAIXA na tela */
+    margin: 20px auto; 
+    width: 80%; 
+    max-width: 600px; /* Impede que a caixa fique larga demais em monitores grandes */
+    
+    /* Sombra ao redor da caixa para dar profundidade */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.aulas p {
+    color: #eeeeee;
+    margin-bottom: 15px;
+}
+
+.aulas ul li {
+    margin: 10px 0; /* Espaçamento entre os itens da lista */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none; /* Tira o sublinhado */
+    color: #00e5ff; /* Um azul ciano brilhante que combina com o tema tech */
+    font-size: 1.1rem;
+    transition: 0.3s; /* Deixa a mudança de cor suave */
+}
+
+/* Cor quando passar o mouse por cima do link */
+a:hover {
+    color: #f7df1e; /* Fica amarelo (cor do JS) ao passar o mouse */
+    text-shadow: 0px 0px 8px rgba(247, 223, 30, 0.6); /* Dá um brilhozinho */
+}
