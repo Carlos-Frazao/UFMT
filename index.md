@@ -19,13 +19,6 @@ layout: default
       break; // Substitui a logo e para a busca
     }
   }
-
-  window.addEventListener('DOMContentLoaded', function() {
-    var tituloCabecalho = document.querySelector('header h1') || document.querySelector('.project-name');
-    if (tituloCabecalho) {
-      tituloCabecalho.innerHTML = '<a href="/UFMT/"><img src="https://posgcd.ic.ufmt.br/wp-content/uploads/2023/02/cropped-Marca_UFMT_Vertical.png" alt="Logo UFMT" style="max-height: 80px; cursor: pointer;"></a>';
-    }
-  });
 </script>
 
 {% include_relative README.md %}
