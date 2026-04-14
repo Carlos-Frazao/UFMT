@@ -18,10 +18,14 @@
     margin-bottom: 15px;
 }
 
-.aulas ul li {
-    list-style: none;
+.aulas ul {
     padding: 0;
     margin: 0;
+}
+
+.aulas ul li {
+    list-style: none;
+    margin: 10px 0;
 }
 
 a {
