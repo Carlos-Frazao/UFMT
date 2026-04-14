@@ -1,0 +1,14 @@
+Exercício 1 —
+Desenvolva um programa que leia o nome completo de um usuário e sua idade, e exiba essas informações de forma organizada na tela, utilizando `cin`, `getline` e `cout`.
+
+Exercício 2 —
+Crie um programa que leia nome completo, idade e altura de uma pessoa, armazenando corretamente cada tipo de dado e exibindo todas as informações ao final de forma clara.
+
+Exercício 3 —
+Implemente um programa que leia três valores numéricos e exiba esses valores na mesma ordem em que foram digitados, utilizando corretamente o fluxo de entrada e saída padrão.
+
+Exercício 4 —
+Desenvolva um programa que leia o nome de uma pessoa e seu salário, exibindo os dados em formato organizado, com o salário apresentado com duas casas decimais e alinhamento adequado.
+
+Exercício 5 —
+Crie um programa que leia o nome completo de um aluno, sua idade e três notas, calcule a média e exiba todas as informações de forma estruturada, incluindo a média com formatação adequada.
