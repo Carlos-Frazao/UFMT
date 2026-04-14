@@ -1,11 +1,11 @@
 .atividades {
     text-align: center; /* Centraliza os textos e os links */
     background-color: rgba(0, 0, 0, 0.65); /* Fundo preto com 65% de transparência */
-    padding: 25px;
+    padding: 0;
     border-radius: 12px; /* Deixa as bordas arredondadas, bem moderno */
     
     /* Esses dois comandos abaixo centralizam a CAIXA na tela */
-    margin: 20px auto; 
+    margin: 0p; 
     width: 80%; 
     max-width: 600px; /* Impede que a caixa fique larga demais em monitores grandes */
     

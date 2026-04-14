@@ -1,0 +1,20 @@
+.cabecalho {    
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.cabecalho ul {
+    list-style-type: none; /* remover os pontos */
+    padding: 0;            /* Remove o recuo padrão da esquerda */
+    margin: 0;             /* Remove as margens padrão */
+    display: flex;         
+    justify-content: center; /* Centraliza os botões */
+    gap: 30px;               /* Dá um espaço entre cada palavra do menu */
+}
+
+.cabecalho ul li {
+    display: inline; /* Exibe os itens em linha */
+    cursor: pointer;
+}

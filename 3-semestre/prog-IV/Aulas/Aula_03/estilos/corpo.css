@@ -1,0 +1,29 @@
+.cabecalho_corpo {
+    color:#fff;
+    background: #FF99B1;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.corpo {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cabecalho h1 {
+    margin: 5px 0;
+}
+
+.cartao {
+    background: #f0f0f0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.um {
+    color: #ff69b4;
+    font-weight: bold;
+}
