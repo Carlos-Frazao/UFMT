@@ -9,6 +9,13 @@ int temp_7_Dias() {
     for (int i=0; i<7; i++) {
         cout << "Digite a temperatura do dia " << i+1 << ": ";
         cin >> vet[i];
+
+        // Fazendo a verificação da maior sequência 
+            if (vet[i] > vet[i-1]) {
+                cout << "A temperatura subiu no dia " << i+1 << endl;
+            } else {
+                cout << "A temperatura não subiu no dia " << i+1 << endl;
+            }       
     }
 
     return 0;
@@ -16,7 +23,7 @@ int temp_7_Dias() {
 
 // Função pincípal
 int main() {
-    int maxSequencia = temp_7_Dias();
+    temp_7_Dias();
     cout << "A maior sequência de dias com temperatura subindo é: ";
 
     return 0;
