@@ -1,7 +1,7 @@
 .rodape {
     color: #aaaaaa; /* Cinza claro, não chama tanta atenção */
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     background-color: rgba(0, 0, 0, 0.8); /* Fundo preto quase sólido */
     margin-top: 50px; /* Dá um respiro entre o conteúdo e o final da página */
     font-size: 0.9rem;
@@ -9,4 +9,8 @@
     bottom: 0;       /* Cola no limite de baixo (zero distância) */
     left: 0;         /* Cola na esquerda */
     width: 100%;     /* Faz a faixa ir de ponta a ponta */
+}
+
+.rodape p {
+    margin: 0; /* Remove a margem padrão do parágrafo para evitar espaçamento extra */
 }
