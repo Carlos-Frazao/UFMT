@@ -1,0 +1,5 @@
+EU:
+    Estruturação do html
+    todo os style.css
+    divisão de menu(ul, li) fsociety, dark army e e-corp
+IA:

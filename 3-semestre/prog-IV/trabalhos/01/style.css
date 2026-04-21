@@ -1,0 +1,186 @@
+body {
+    background: rgb(151, 46, 146);
+}
+
+.container {
+    width: 100%; /*Largura do container de 80%*/
+    height: 100%vh; /*Altura do container de 100%*/
+    margin: auto; /*Centralizar verticalmente*/
+}
+
+header, footer {
+    background: #83dd0e;
+    color: white;
+    padding: 20px;
+    text-align: center; /*Centraliza o rodapé e o cabeçalho no centro */
+}
+
+nav {
+    background: #555;
+    text-align: center; /*Centralizar o menu no centro*/
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+nav ul {
+    list-style: none; /* Remove os pontinhos */
+    padding: 0;       /* Remove o espaço interno padrão do navegador */
+    margin: 0;        /* Remove o espaço externo padrão do navegador */
+    /* A mágica do alinhamento acontece aqui: */
+    display: flex;             /* Coloca os itens lado a lado */
+    justify-content: center;   /* Centraliza todos eles no meio do nav */
+    gap: 30px;                 /* Cria um espaço de 30px entre cada botão */
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 15px;
+    background: #f2f4f2;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #9bfaada5;
+    box-shadow: 2px 3px 4px black; 
+}
+main {
+    background: #eee;
+    padding: 65px;    
+    text-align: center;
+   
+}
+.nav_cadastro {
+    background: #555;
+    text-align: center; /*Centralizar o menu no centro*/
+    padding: 10px;
+}
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+form h2 {
+    margin: 5px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+a {
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 6px 13px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Container da Tabela */
+.tabela-container {
+    background-color: #222; /* Fundo escuro simulando terminal */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px auto;
+    width: 90%;
+    color: #eee;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Sombrinha para dar profundidade */
+}
+
+.tabela-container h2 {
+    color: #83dd0e; /* Verde do seu header */
+    margin-top: 0;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+/* Estilização da Tabela em si */
+.tabela-wiki {
+    width: 100%;
+    border-collapse: collapse; /* Junta as bordas das células */
+    text-align: left;
+}
+
+/* Células e Cabeçalho */
+.tabela-wiki th, .tabela-wiki td {
+    padding: 15px;
+    border-bottom: 1px solid #444; /* Linha sutil separando cada registro */
+}
+
+.tabela-wiki th {
+    background-color: #111;
+    color: #83dd0e;
+    font-weight: bold;
+}
+
+/* Efeito Hover nas linhas (Requisito da professora) */
+.tabela-wiki tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.tabela-wiki tbody tr:hover {
+    background-color: #333; /* Destaca a linha quando o mouse passa por cima */
+}
+
+/* Organiza a lista de personagens para um ficar embaixo do outro */
+.lista-personagens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre um quadrado e outro */
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* O quadrado do personagem em si */
+.card-personagem {
+    display: flex; /* Coloca a foto na esquerda e info na direita */
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden; /* Evita que a foto vaze pelas bordas arredondadas */
+    border-left: 5px solid #83dd0e; /* Detalhe em verde na lateral */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease; /* Efeito suave pro hover */
+}
+
+/* Efeito de aumentar um pouquinho quando passa o mouse */
+.card-personagem:hover {
+    transform: scale(1.02);
+}
+
+/* Ajustes da foto para ficar um quadrado certinho na esquerda */
+.foto-personagem img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+}
+
+/* Ajustes do texto na direita */
+.info-personagem {
+    padding: 20px;
+    color: #eee;
+}
+
+.info-personagem h3 {
+    color: #83dd0e;
+    margin-top: 0;
+    font-size: 24px;
+}
