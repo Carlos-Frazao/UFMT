@@ -4,27 +4,42 @@ using namespace std;
 
 // Função para pegar a temperatura
 int temp_7_Dias() {
-    int vet [7];
+    int vet [7]; // Jogando 7 valores em um vetor
 
     for (int i=0; i<7; i++) {
         cout << "Digite a temperatura do dia " << i+1 << ": ";
         cin >> vet[i];
-
-        // Fazendo a verificação da maior sequência 
-            if (vet[i] > vet[i-1]) {
-                cout << "A temperatura subiu no dia " << i+1 << endl;
-            } else {
-                cout << "A temperatura não subiu no dia " << i+1 << endl;
-            }       
+    }
+    // Rastrear as sequências
+        int sequencia_atual = 0; 
+        int maior_sequencia = 0;    
+        
+        for (int i = 1; i < 7; i++) {
+        if (vet[i] > vet[i-1]) {
+            // A temperatura subiu em relação a ontem! Aumenta a sequência atual.
+            sequencia_atual++;
+        } else {
+            // A temperatura caiu ou se manteve igual. A sequência quebrou.
+            // Antes de zerar, verificamos se essa sequência que acabou era a maior de todas:
+            if (sequencia_atual > maior_sequencia) {
+                maior_sequencia = sequencia_atual;
+            }
+            // Reseta a sequência atual para começar a contar de novo a partir do dia atual
+            sequencia_atual = 0;
+        }
+}
+    if (sequencia_atual > maior_sequencia) {
+        maior_sequencia = sequencia_atual;
     }
 
-    return 0;
+    return maior_sequencia;
 }
 
 // Função pincípal
 int main() {
-    temp_7_Dias();
-    cout << "A maior sequência de dias com temperatura subindo é: ";
+    int resultado = temp_7_Dias();
+
+    cout << "A maior sequência de dias com temperatura subindo é: " << resultado << endl;
 
     return 0;
 }
