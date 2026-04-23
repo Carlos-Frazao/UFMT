@@ -12,10 +12,17 @@ int temp_7_Dias() {
     }
     // Rastrear as sequências
         int sequencia_atual = 0; 
-        int maior_sequencia = 0;    
+        int maior_sequencia = 0;
         
+        /* media graus maior que 25
+        for (int i = 0; i < 7; i++) {
+            if (vet[i] > 25) {
+                sequencia_atual++;
+            }
+        */
+
         for (int i = 1; i < 7; i++) {
-        if (vet[i] > vet[i-1]) {
+        if (vet[i] > vet[i-1] & vet[i] > 25){
             // A temperatura subiu em relação a ontem! Aumenta a sequência atual.
             sequencia_atual++;
         } else {
@@ -39,7 +46,7 @@ int temp_7_Dias() {
 int main() {
     int resultado = temp_7_Dias();
 
-    cout << "A maior sequência de dias com temperatura subindo é: " << resultado << endl;
+    cout << "A maior sequência de dias com temperatura acima de 25 subindo é: " << resultado << endl;
 
     return 0;
 }
