@@ -7,7 +7,7 @@
         <!--Alterar ícone-->
         <link rel="icon" href="https://i.pinimg.com/736x/46/fa/99/46fa99d9fdf1a78088eaddd036117b03.jpg" type="img.jpg">
         <!--Links css, etc-->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="estilo/style.css">
     </head>
     <body>
         <div class="container">
@@ -17,7 +17,7 @@
                 <nav>
                     <ul>
                         <li><a href="#" class="filtro" data-grupo="todos">Todos</a></li>
-                        <li><a href="#" class="filtro" data-grupo="fsociety">Fsociety</a></li>
+                        <li><a href="" class="filtro" data-grupo="fsociety">Fsociety</a></li>
                         <li><a href="#" class="filtro" data-grupo="ecorp">E-Corp</a></li>
                         <li><a href="#" class="filtro" data-grupo="dark-army">Dark Army</a></li> <!--Exército Sombrio-->
                     </ul>
@@ -31,62 +31,201 @@
                                 </div>
                                 <div class="info-personagem">
                                     <h3>Elliot Alderson</h3>
-                                    <p><strong>Afiliação:</strong> fsociety</p>
-                                    <p>Engenheiro de cibersegurança da Allsafe de dia, e hacker vigilante à noite. É o cérebro por trás da fsociety.</p>
+                                    <p><strong>Afiliação:</strong> Fsociety</p>
+                                    <p>Engenheiro de cibersegurança da Allsafe de dia, e hacker vigilante à noite. É o cérebro por trás da Fsociety.</p>
                                 </div>
                             </article>
-
                             <article class="card-personagem" data-grupo="fsociety">
                                 <div class="foto-personagem">
-                                    <img src="https://i.pinimg.com/736x/5c/13/28/5c132893d1aff7bc10e2489a22d3ac8e.jpg" alt="Foto do Mr. Robot">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/f/f5/Mr._Robot_Icon.jpg/revision/latest?cb=20240329005940" alt="Foto do Mr. Robot">
                                 </div>
                                 <div class="info-personagem">
                                     <h3>Mr. Robot</h3>
-                                    <p><strong>Afiliação:</strong> fsociety</p>
+                                    <p><strong>Afiliação:</strong> Fsociety</p>
                                     <p>O líder carismático, instável e misterioso do grupo hacker underground conhecido como fsociety.</p>
                                 </div>
                             </article>
-                        </section>
-
-                        <section class="tabela-container">
-                            <h2>Registro de Ferramentas e Acessos</h2>
-    
-                            <table class="tabela-wiki">
-                                <thead>
-                                    <tr>
-                                        <th>Personagem</th>
-                                        <th>Afiliação</th>
-                                        <th>Nível de Acesso</th>
-                                        <th>Especialidade Operacional</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Elliot Alderson</td>
-                                        <td>fsociety</td>
-                                        <td>Root (Admin)</td>
-                                        <td>Pentesting / Kali Linux</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Darlene Alderson</td>
-                                        <td>fsociety</td>
-                                        <td>Root (Admin)</td>
-                                        <td>Malware / Engenharia Social</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Trenton</td>
-                                        <td>fsociety</td>
-                                        <td>Root (Admin)</td>
-                                        <td>OSINT / Exploração Mobile</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tyrell Wellick</td>
-                                        <td>E-Corp</td>
-                                        <td>Executivo (User)</td>
-                                        <td>Escalonamento de Privilégios</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <article class="card-personagem" data-grupo="fsociety">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/e/e4/Season_4_Darlene.jpg/revision/latest/scale-to-width-down/250?cb=20190928213622" alt="Foto do Mr. Robot">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Darlene Alderson</h3>
+                                    <p><strong>Afiliação:</strong> Fsociety</p>
+                                    <p>Darlene Alderson é uma hacker, programadora e membro da fsociedade. Também é revelado que ela é Elliot são irmão.</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="e-corp">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/c/c8/Season_4_Tyrell_Wellick.jpg/revision/latest/scale-to-width-down/250?cb=20190928213725" alt="Foto do Mr. Robot">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Tyrell Wellick</h3>
+                                    <p><strong>Afiliação:</strong> E-Corp</p>
+                                    <p>Tyrell Wellick é ex-Vice-Presidente Sênior de Tecnologia da E-Corp</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="dark-army">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/5/5f/Season_4_Whiterose.jpg/revision/latest/scale-to-width-down/250?cb=20190928214047" alt="Foto do Mr. Robot">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Whiterose</h3>
+                                    <p><strong>Afiliação:</strong> Dark Army</p>
+                                    <p>Whiterose é o líder do Exército Sombrio, um grupo hacker chinês.</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="e-corp">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/6/6e/Season_2_Angela_Moss.jpg/revision/latest?cb=20240303184219" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Angela Moss</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="todos">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/6/6c/Shayla_002.jpg/revision/latest?cb=20150607200006" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Shayla Nico</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="todos">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/e/ef/Mr.-Robot-1x05-16.jpg/revision/latest?cb=20240302001232" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Fernando Vera</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="?">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/6/60/Janice.jpg/revision/latest?cb=20200111175542" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Janice</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="?">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/8/84/Cisco.jpg/revision/latest?cb=20150810145705" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Cisco</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="?">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/9/95/Otto_in_the_crime_scene.jpg/revision/latest?cb=20240316174346" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Otto Irving</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="?">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/1/18/Leon.jpg/revision/latest?cb=20240303192208" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Leon</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="?">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/3/37/Dominique_DiPierro_looking_at_something.jpg/revision/latest?cb=20240309181203" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Dominique DiPierro</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="?">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/0/00/Grant_Chang.jpg/revision/latest/scale-to-width-down/1000?cb=20171214053630" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Grant</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="?">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/1/1e/Trenton.png/revision/latest?cb=20150810142611" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Trenton</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="?">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/2/2b/Romero.jpg/revision/latest?cb=20150807160301" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Leslie Romero</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="fsociety">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/6/6d/Mobley.png/revision/latest?cb=20150826004026" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Mobley,</h3>
+                                    <p><strong>Afiliação:</strong> Fsociety</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="?">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/a/a9/Olivia_Cortez.jpg/revision/latest?cb=20240428154841" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Olivia Cortez</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>?</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="ecorp">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/c/c8/Loyd_001Cropped.jpg/revision/latest?cb=20150608043234" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Lloyd Chong</h3>
+                                    <p><strong>Afiliação:</strong> E-Corp</p>
+                                    <p>Lloyd Chong é engenheiro de segurança cibernética na Segurança Cibernética Allsafe</p>
+                                </div>
+                            </article>
+                            <article class="card-personagem" data-grupo="?">
+                                <div class="foto-personagem">
+                                    <img src="https://static.wikia.nocookie.net/mrrobot/images/b/b6/Krista.png/revision/latest?cb=20150603024920" alt="Foto do ?">
+                                </div>
+                                <div class="info-personagem">
+                                    <h3>Krista Gordon</h3>
+                                    <p><strong>Afiliação:</strong> ?</p>
+                                    <p>Krista Gordon é uma terapeuta de Elliot Alderson, indicada pelo tribunal.</p>
+                                </div>
+                            </article>
+                        
                         </section>
                     </form>
                 </main>
@@ -94,5 +233,6 @@
                     <p>© 2026 Programação de Computadores IV - UFMT</p>
                 </footer>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
