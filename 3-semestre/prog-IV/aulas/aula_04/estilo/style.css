@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212; /* Tema Sombrio */
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace; /* Fonte estilo terminal/retro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Cursor personalizado obrigatório (mira vermelha) */
+    cursor: crosshair; 
+}
+
+.container {
+    text-align: center;
+    width: 800px;
+}
+
+h1 {
+    color: #ff3333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
+}
+
+#painel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #333;
+}
+
+.status {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btn-iniciar {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#btn-iniciar:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+#area-jogo {
+    width: 100%;
+    height: 500px;
+    background-color: #0a0a0a;
+    border: 2px solid #ff3333;
+    border-radius: 15px;
+    position: relative; /* Essencial para o absolute dos filhos funcionar aqui dentro */
+    overflow: hidden; /* Impede que a máscara vaze para fora da caixa */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+}
+
+/* Classe que será aplicada aos inimigos criados no JS */
+.inimigo {
+    position: absolute;
+    width: 80px; 
+    height: 80px;
+    cursor: crosshair;
+    animation: surgir 0.3s ease-out; /* Efeito de animação ao nascer */
+}
+
+/* Efeito visual obrigatório: Animação de surgimento */
+@keyframes surgir {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Efeito visual de sangue/partícula ao clicar */
+.sangue {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 50%;
+    pointer-events: none; /* Para o clique não travar no sangue */
+    animation: espirro 0.4s ease-out forwards;
+}
+
+@keyframes espirro {
+    0% { transform: scale(0.5); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
+}
