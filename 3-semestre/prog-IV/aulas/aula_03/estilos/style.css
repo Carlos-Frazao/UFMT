@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffc2d1;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+header {
+    background: #f77898;
+    color: rgb(252, 251, 251);
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style-type: none; /* remover os pontos */
+    display: flex;         
+    justify-content: center; /* Centraliza os botões */
+    gap: 30px;               /* Dá um espaço entre cada palavra do menu */
+}
+
+nav ul li {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline; /* Exibe os itens em linha */
+    cursor: pointer;
+}
+
+/* Baner do site fica em baixo do cabeçalho */
+.baner {
+    background-color: #ffa0b8; /* Um tom de rosa um pouco mais claro/suave */
+    color: white;
+    text-align: center;
+    padding: 70px 0px; /* Isto dá 70px de espaço em cima e em baixo, criando a altura */
+    width: 100%;
+}
+
+.baner h2 {
+    font-size: 32px;
+    font-weight: normal; 
+}
+
+/* Esse é o main */
+.caixa {
+    width: 95%;
+    max-width: 1500px;
+    margin: 40px auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.cartao {
+    background-color: white;
+    border-radius: 20px; /* Deixa as bordas bem redondinhas */
+    padding: 25px;
+    margin-bottom: 25px; /* Espaço entre um cartão e o próximo */
+}
+
+.cartao h3 {
+    color: #0c0c0c; /* Um cinza escuro no lugar do preto puro, fica mais suave */
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.cartao p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* --- Estilos da Seção de Personagens --- */
+.grid-personagens {
+    display: flex; /* Coloca os itens lado a lado */
+    flex-wrap: wrap; /* Se não couber na tela, joga pra linha de baixo */
+    gap: 15px; /* Espaço entre as caixinhas */
+    justify-content: center; /* Centraliza tudo */
+}
+
+.personagem {
+    background-color: #ffb3c6; /* Rosa das caixinhas */
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 13px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Uma sombrinha bem leve */
+}
+
+.personagem strong {
+    font-size: 15px;
+    display: block; /* Joga o texto de baixo para a próxima linha */
+    margin-bottom: 5px;
+}
+
+/* --- Estilos do Formulário --- */
+.formulario {
+    display: flex;
+    flex-direction: column; /* Coloca os campos um embaixo do outro */
+    gap: 10px;
+}
+
+.formulario input, 
+.formulario textarea {
+    padding: 12px;
+    border: 1px solid #fce4ec;
+    border-radius: 8px;
+    font-family: inherit; /* Puxa a fonte do body */
+    outline: none;
+}
+
+.formulario button {
+    background-color: #f77898;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.formulario button:hover {
+    background-color: #f45b82; /* Muda a cor quando passa o mouse */
+}
+
+footer {
+    background-color: #f77898;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 25px; /* Dá um espaço entre o conteúdo e o rodapé */
+}
