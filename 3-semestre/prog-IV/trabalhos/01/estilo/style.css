@@ -57,8 +57,69 @@ main {
     background: #eee;
     padding: 65px;    
     text-align: center;
-   
 }
+
+.tabela-wiki {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.tabela-wiki table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    min-width: 300px;
+}
+
+.tabela-wiki th, .tabela-wiki td {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.tabela-wiki th {
+    background: #111;
+    color: #83dd0e;
+    font-weight: bold;
+}
+
+.tabela-wiki tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.ranking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ranking ol {
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+#btn-info-serie {
+    display: inline-block;
+    margin: 20px auto 0 auto;
+    padding: 12px 28px;
+    background: #83dd0e;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#btn-info-serie:hover {
+    background: #6ab009;
+}
+
 .nav_cadastro {
     background: #555;
     text-align: center; /*Centralizar o menu no centro*/

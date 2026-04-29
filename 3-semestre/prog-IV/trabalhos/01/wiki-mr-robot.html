@@ -11,9 +11,10 @@
     </head>
     <body>
         <div class="container">
-                <header>
-                    <h2>Wiki Mr. Robot</h2>
-                </header>
+                    <header>
+                        <h2>Wiki Mr. Robot</h2>
+                        <button id="btn-info-serie" onclick="document.getElementById('info-serie').scrollIntoView({behavior: 'smooth'});">Informações da Série</button>
+                    </header>
                 <nav>
                     <ul>
                         <li><a href="#" class="filtro" data-grupo="todos">Todos</a></li>
@@ -22,7 +23,7 @@
                         <li><a href="#" class="filtro" data-grupo="dark-army">Dark Army</a></li> <!--Exército Sombrio-->
                     </ul>
                 </nav>
-                <main>
+                <main id="conteudo-principal">
                     <form action="#" method="POST">
                         <section class="lista-personagens">
                             <!-- Elliot Alderson -->
@@ -357,6 +358,37 @@
                             </article>
                         </section>
                     </form>
+                    <!-- Tabela de informações -->
+                    <section class="tabela-wiki" id="info-serie">
+                        <h3>Informações da Série</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ano</th>
+                                    <th>Temporadas</th>
+                                    <th>Episódios</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2015</td>
+                                    <td>4</td>
+                                    <td>45</td>
+                                </tr>   
+                            </tbody>
+                        </table>
+                    </section>
+                    <!-- Lista ordenada de personagens principais -->
+                    <section class="ranking">
+                        <h3>Top 5 Personagens Mais Importantes</h3>
+                        <ol>
+                            <li>Elliot Alderson</li>
+                            <li>Mr. Robot</li>
+                            <li>Darlene Alderson</li>
+                            <li>Tyrell Wellick</li>
+                            <li>Whiterose</li>
+                        </ol>
+                    </section>
                 </main>
                 <footer>
                     <p>© 2026 Programação de Computadores IV - UFMT</p>
