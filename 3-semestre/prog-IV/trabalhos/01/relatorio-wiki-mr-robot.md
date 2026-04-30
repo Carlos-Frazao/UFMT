@@ -1,6 +1,6 @@
 # Relatório do Trabalho: Wiki Mr. Robot
 
-## 1. Identificação do Trabalho
+## Identificação do Trabalho
 - Curso: Programação de Computadores IV
 - Disciplina: Prog-IV
 - Projeto: Wiki Mr. Robot
@@ -9,15 +9,15 @@
   - `script.js`
   - `estilo/style.css`
 
-## 2. Objetivo do Projeto
+## Objetivo do Projeto
 O trabalho consiste em construir uma página de tipo "wiki" com cards de personagens da série *Mr. Robot*, permitindo filtrar personagens por afiliação usando JavaScript.
 
-## 3. Estrutura de Arquivos
+## Estrutura de Arquivos
 - `wiki-mr-robot.html`: página principal em HTML que contém a estrutura de navegação, personagens e o rodapé.
 - `script.js`: script JavaScript responsável pela lógica de filtragem dos cards de personagens.
 - `estilo/style.css`: arquivo de estilo que define cores, layout e interações visuais.
 
-## 4. Conteúdo HTML
+## Conteúdo HTML
 A página contém:
 - `<header>` com o título "Wiki Mr. Robot".
 - `<nav>` com botões de filtro para as categorias: `Todos`, `Fsociety`, `E-Corp` e `Dark Army`.
@@ -69,7 +69,7 @@ A página exibe personagens da série, incluindo, entre outros:
 Além disso, a página contém um rodapé com a mensagem:
 - `© 2026 Programação de Computadores IV - UFMT`
 
-## 5. Comportamento de JavaScript
+## Comportamento de JavaScript
 O arquivo `script.js` faz o seguinte:
 - seleciona todos os links de filtro com a classe `.filtro`
 - seleciona todos os cards com a classe `.card-personagem`
@@ -85,7 +85,7 @@ O arquivo `script.js` faz o seguinte:
 - o JavaScript considera que os cards usam `display: flex` no CSS para manter o layout, então restaura `flex` ao mostrar um card.
 - o uso de `evento.preventDefault()` garante que o clique não recarregue a página, mesmo quando o link tem `href="#"` ou `href=""`.
 
-## 6. Estilização CSS
+## Estilização CSS
 O `style.css` define o visual da página:
 - fundo com cor clara e degradê suave
 - `header` e `footer` verdes com texto branco
@@ -96,7 +96,7 @@ O `style.css` define o visual da página:
 - transição suave ao passar o mouse nos cards (`hover` aumenta levemente o card)
 - elementos de tabela estilizados, embora não haja tabela ativa na página atual
 
-## 7. Avaliação geral do trabalho
+## Avaliação geral do trabalho
 Pontos fortes:
 - boa organização visual com cards e navegação clara
 - uso de `data-grupo` para separar personagens por categoria
@@ -108,9 +108,8 @@ Melhorias possíveis:
 - incluir legendas ou títulos de grupos no layout para facilitar a leitura
 - extrair dados de personagens para um array JS para tornar o HTML mais enxuto
 
-## 8. Conclusão
+## Conclusão
 O trabalho entrega uma mini aplicação de navegação por personagens de *Mr. Robot* com filtros funcionando e um layout estilizado. A lógica do `script.js` é clara e cumpre o objetivo de mostrar apenas os cards correspondentes à categoria selecionada.
 
 ---
 
-> Arquivo gerado: `relatorio-wiki-mr-robot.md`
