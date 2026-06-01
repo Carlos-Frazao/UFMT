@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios 5 - Prog II</title>
+    <link rel="stylesheet" href="../estilos/body.css">
+    <link rel="stylesheet" href="../estilos/cabecalho.css">
+    <style>
+        /* Um estilo rápido só para a caixa da lista */
+        .caixa-lista {
+            background-color: rgba(0, 0, 0, 0.65);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 800px;
+            margin: 40px auto;
+            color: #eeeeee;
+        }
+        .caixa-lista ul li {
+            display: flex; /* Ativa o modo flexível */
+            justify-content: space-between; /* Empurra o primeiro link pra esquerda e o botão pra direita */
+            align-items: center; /* Garante que o texto e o botão fiquem alinhados no meio na vertical */
+            
+            margin-bottom: 15px; /* Dá um respiro entre um exercício e outro */
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* DICA: Cria uma linha bem suave separando os exercícios */
+        }
+        .btn-voltar {
+            color: #00e5ff;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .btn-voltar:hover {
+            color: #f7df1e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caixa-lista">
+        <a href="../../../index.html" class="btn-voltar">Voltar para o Repositório</a>
+
+        <h2>Lista da Aula 05</h2>
+        <p>Exercícios passados pela professora resolvidos em C++.</p>
+
+        <hr>
+
+        <ul>
+            <li><a href="ex01.cpp">Exercício 01 - nicialize duas variáveis inteiras x e y e imprimir o endereço</a> <a href="ex01.cpp" download="ex01.cpp" class="btn-download"> Baixar .cpp</a></li>
+            <li><a href="ex02.cpp">Exercício 02 - </a> <a href="ex02.cpp" download="ex02.cpp" class="btn-download"> Baixar .cpp</a></li>
+    </div>
+</body>
+</html>
