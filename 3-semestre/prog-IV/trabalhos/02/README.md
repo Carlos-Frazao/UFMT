@@ -100,3 +100,53 @@ npm test
 ```
 
 Os testes cobrem regras principais do `PersonagemService` e do `AuthService`.
+
+# Requisitos de Sistema e Ambiente (Wiki Mr. Robot)
+
+Para executar este projeto Full-Stack (Back-end em NestJS e Front-end em Vanilla JS), o computador não precisa ser um servidor superpotente, mas exige que algumas ferramentas específicas de desenvolvimento estejam instaladas e configuradas. 
+
+Abaixo estão os requisitos de hardware e software necessários para rodar a aplicação localmente de forma fluida.
+
+---
+
+## 1. Requisitos de Software (Ambiente de Desenvolvimento)
+
+Estas são as ferramentas obrigatórias que o computador deve ter instaladas para compilar e interpretar o código do projeto:
+
+* **Sistema Operacional:** Compatível com Windows (10 ou 11), distribuições Linux (como Debian ou Ubuntu) ou macOS.
+* **Node.js:** É o motor principal do Back-end. Necessário estar na versão LTS ou superior (o projeto foi testado e compilado com sucesso na versão `v24.x`).
+* **NPM (Node Package Manager):** Gerenciador de pacotes que vem instalado junto com o Node.js. É responsável por baixar e instalar as dependências do NestJS (a pasta `node_modules`).
+* **Navegador Web (Browser):** Qualquer navegador moderno atualizado (Google Chrome, Mozilla Firefox, Microsoft Edge ou Brave) com suporte a requisições assíncronas (Fetch API) e armazenamento local (`localStorage`).
+* **Banco de Dados (Integrado):** O projeto utiliza **SQLite**. Como é um banco de dados baseado em arquivo (serverless), **não é necessário** instalar nenhum software de banco de dados externo (como MySQL ou PostgreSQL). O próprio Node.js cria e gerencia o arquivo `.sqlite`.
+
+## 2. Requisitos de Hardware
+
+Embora aplicações em Node.js sejam leves, o ambiente de desenvolvimento em si (rodando o Editor de Código, o Servidor Local e o Navegador simultaneamente) consome recursos.
+
+* **Processador (CPU):** Qualquer processador Dual-Core moderno (Intel Core i3/AMD Ryzen 3 ou equivalente) de 64 bits é perfeitamente capaz de compilar o TypeScript e rodar a API.
+* **Memória RAM:**
+  * **Mínimo:** 4 GB (Suficiente para rodar o servidor e o navegador, mas pode apresentar lentidão ao abrir muitas abas).
+  * **Recomendado:** 8 GB ou mais (Ideal para manter o VS Code, o terminal do servidor, o navegador e a ferramenta de desenvolvedor abertos sem gargalos de memória).
+* **Armazenamento:** Pelo menos **500 MB** de espaço livre em disco. A maior parte desse espaço é consumida pela pasta de bibliotecas (`node_modules`). O uso de um **SSD** é altamente recomendado em vez de um HD tradicional, pois acelera drasticamente o tempo de instalação das dependências (comando `npm install`) e a compilação do TypeScript para a pasta `dist`.
+
+---
+
+## 3. Ferramentas Recomendadas (Opcionais, mas ideais)
+
+Para quem for não apenas executar, mas também dar manutenção no código:
+
+* **Editor de Código:** Visual Studio Code (VS Code), pela sua integração nativa com TypeScript e terminais embutidos.
+* **Terminal:** PowerShell (no Windows) ou Bash (no Linux/macOS) para a execução dos comandos de compilação e inicialização do servidor.
+
+---
+
+## 4. Checklist de Verificação Rápida
+
+Antes de tentar rodar o projeto em qualquer máquina, o usuário pode verificar se o computador atende aos requisitos básicos abrindo o terminal e digitando os seguintes comandos:
+
+```bash
+# Verifica se o Node.js está instalado e mostra a versão
+node -v
+
+# Verifica se o gerenciador de pacotes está disponível
+npm -v
