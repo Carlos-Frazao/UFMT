@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki Mr. Robot - Trabalho 02</title>
+    <link rel="stylesheet" href="estilo/style.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <div>
+        <h1>Wiki Mr. Robot</h1>
+        <p>Trabalho 02 - integração Front-end e Back-end</p>
+      </div>
+      <button id="btn-sair" class="oculto">Sair</button>
+    </header>
+
+    <main>
+      <section id="area-auth" class="painel">
+        <h2>Acesso</h2>
+        <form id="form-auth">
+          <label>
+            E-mail
+            <input id="email" type="email" required value="admin@email.com" />
+          </label>
+          <label>
+            Senha
+            <input id="senha" type="password" required value="123456" />
+          </label>
+          <div class="acoes">
+            <button type="button" id="btn-cadastrar">Cadastrar</button>
+            <button type="submit">Entrar</button>
+          </div>
+        </form>
+        <p id="mensagem-auth"></p>
+      </section>
+
+      <section id="area-app" class="oculto">
+        <nav class="filtros">
+          <button class="filtro ativo" data-grupo="todos">Todos</button>
+          <button class="filtro" data-grupo="fsociety">Fsociety</button>
+          <button class="filtro" data-grupo="ecorp">E-Corp</button>
+          <button class="filtro" data-grupo="dark-army">Dark Army</button>
+          <button class="filtro" data-grupo="independente">Independente</button>
+        </nav>
+
+        <section class="painel">
+          <h2>Gerenciar personagem</h2>
+          <form id="form-personagem">
+            <input id="personagem-id" type="hidden" />
+            <label>
+              Título
+              <input id="titulo" required />
+            </label>
+            <label>
+              Conteúdo/Texto
+              <textarea id="conteudo" rows="4" required></textarea>
+            </label>
+            <label>
+              Imagem
+              <input id="imagem" type="url" required />
+            </label>
+            <div class="linha">
+              <label>
+                Ordem
+                <input id="ordem" type="number" min="1" required />
+              </label>
+              <label>
+                Afiliação
+                <select id="afiliacao" required>
+                  <option value="fsociety">Fsociety</option>
+                  <option value="ecorp">E-Corp</option>
+                  <option value="dark-army">Dark Army</option>
+                  <option value="independente">Independente</option>
+                </select>
+              </label>
+            </div>
+            <div class="acoes">
+              <button type="button" id="btn-limpar">Limpar</button>
+              <button type="submit">Salvar</button>
+            </div>
+          </form>
+          <p id="mensagem-personagem"></p>
+        </section>
+
+        <section class="lista-personagens" id="lista-personagens"></section>
+      </section>
+    </main>
+
+    <footer>
+      <p>2026 Programação de Computadores IV - UFMT</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

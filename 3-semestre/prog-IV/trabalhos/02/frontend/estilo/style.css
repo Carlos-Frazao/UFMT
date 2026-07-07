@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #10130f;
+  color: #f2f4f2;
+  font-family: Arial, sans-serif;
+}
+
+.topo,
+footer {
+  background: #151a14;
+  border-bottom: 3px solid #83dd0e;
+  padding: 18px 8%;
+}
+
+.topo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.topo h1 {
+  margin: 0 0 6px;
+}
+
+.topo p,
+footer p {
+  color: #b8c4b6;
+  margin: 0;
+}
+
+main {
+  padding: 28px 8%;
+}
+
+.painel {
+  background: #1d231c;
+  border: 1px solid #344031;
+  border-radius: 8px;
+  margin: 0 auto 24px;
+  max-width: 980px;
+  padding: 22px;
+}
+
+.painel h2 {
+  color: #83dd0e;
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+label {
+  color: #dce6d9;
+  display: grid;
+  gap: 6px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  background: #0f120f;
+  border: 1px solid #4f6249;
+  border-radius: 6px;
+  color: #f2f4f2;
+  font: inherit;
+  padding: 10px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: #83dd0e;
+  border: 0;
+  border-radius: 6px;
+  color: #111;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 16px;
+}
+
+button:hover {
+  background: #a6ff3d;
+}
+
+.acoes,
+.acoes-card,
+.linha {
+  display: flex;
+  gap: 12px;
+}
+
+.linha label {
+  flex: 1;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.filtro {
+  background: #2d362b;
+  color: #f2f4f2;
+}
+
+.filtro.ativo {
+  background: #83dd0e;
+  color: #111;
+}
+
+.lista-personagens {
+  display: grid;
+  gap: 18px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.card-personagem {
+  background: #1d231c;
+  border-left: 5px solid #83dd0e;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  overflow: hidden;
+}
+
+.foto-personagem img {
+  display: block;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.info-personagem {
+  padding: 18px;
+}
+
+.cabecalho-card {
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cabecalho-card h3 {
+  color: #83dd0e;
+  margin: 0 0 12px;
+}
+
+.cabecalho-card span {
+  background: #111;
+  border: 1px solid #83dd0e;
+  border-radius: 999px;
+  color: #83dd0e;
+  padding: 6px 10px;
+  white-space: nowrap;
+}
+
+.acoes-card {
+  margin-top: 16px;
+}
+
+#mensagem-auth,
+#mensagem-personagem {
+  color: #a6ff3d;
+  font-weight: bold;
+  min-height: 20px;
+}
+
+.oculto {
+  display: none;
+}
+
+footer {
+  border-bottom: 0;
+  border-top: 3px solid #83dd0e;
+  margin-top: 34px;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .topo,
+  .acoes,
+  .linha,
+  .cabecalho-card {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .card-personagem {
+    grid-template-columns: 1fr;
+  }
+}
