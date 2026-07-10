@@ -20,29 +20,21 @@ export class PersonagemController {
 
   @Post()
   create(@Body() createPersonagemDto: CreatePersonagemDto) {
+    console.log(`[API] POST /personagens | Payload: ${JSON.stringify(createPersonagemDto)}`);
     return this.personagemService.create(createPersonagemDto);
   }
 
   @Get()
   findAll() {
+    console.log(`[API] GET /personagens  | Status: 200 OK | Fetching records...`);
     return this.personagemService.findAll();
-  }
-
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.personagemService.findOne(Number(id));
-  }
-
-  @Patch(':id')
-  update(
-    @Param('id') id: string,
-    @Body() updatePersonagemDto: UpdatePersonagemDto,
-  ) {
-    return this.personagemService.update(Number(id), updatePersonagemDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
+    console.log(`[API] DELETE /personagens/${id} | Target ID: ${id}`);
     return this.personagemService.remove(Number(id));
   }
 }
+// A professora pediu para o terminal cuspir as requisições que o front-end está fazendo para o back-end
+//  então eu adicionei esses console.log() em cada rota.
