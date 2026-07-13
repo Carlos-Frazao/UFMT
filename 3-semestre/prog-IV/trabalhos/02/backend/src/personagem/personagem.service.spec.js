@@ -62,4 +62,3 @@ describe('PersonagemService', () => {
         await expect(service.findOne(99)).rejects.toBeInstanceOf(common_1.NotFoundException);
     });
 });
-//# sourceMappingURL=personagem.service.spec.js.map
