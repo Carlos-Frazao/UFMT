@@ -29,12 +29,34 @@ A entidade `Personagem` contempla os campos exigidos na especificacao:
 
 ## Como executar
 
-Entre na pasta do back-end:
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas na sua máquina:
+* **[Node.js](https://nodejs.org/)** (v16 ou superior) - Para rodar o ambiente do Back-end.
+* **[NPM](https://www.npmjs.com/)** - Gerenciador de pacotes (já vem embutido no Node.js).
+* **Navegador Web** (Chrome, Firefox, Edge, etc.) - Para acessar o Front-end e o Swagger.
+
+---
+
+### Preparando e rodando o Back-end (API REST)
+Abra o seu terminal, navegue até a pasta do back-end e instale as dependências:
 
 ```bash
 cd backend
-npm install
-npm run start:dev
+abaixar o node:
+  sudo apt update
+  sudo apt install nodejs -y
+  verificar:
+    node -v
+
+abaixar o gerenciador de pacotes node:
+  npm install
+  verificar 
+    nmp -v
+    
+abaixar o swagger:
+  npm install --save @nestjs/swagger swagger-ui-express
+
+ligar o servidor
+  npm run start:dev
 ```
 
 O banco local `trabalho-02.sqlite` e criado automaticamente na primeira execucao. Depois abra o arquivo `frontend/index.html` no navegador.
