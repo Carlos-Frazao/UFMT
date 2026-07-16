@@ -1,0 +1,3 @@
+ISBN1;Titulo1;Disponivel
+ISBN2;Titulo2;Emprestado
+ISBN3;Titulo3;Disponivel

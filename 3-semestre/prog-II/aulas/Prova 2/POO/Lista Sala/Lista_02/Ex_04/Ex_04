@@ -1,0 +1,63 @@
+#include <iostream>
+#include <string>
+
+std::string::size_type busca_vogal_e_conta(
+    const std::string &s,
+    std::string::size_type &total_vogais
+) {
+    //INICIALIZANDO A VARIÁVEL
+    total_vogais = 0;
+
+    std::string::size_type primeiro_indice = s.size();
+
+    //PERCORRER  STRING
+    for (std::string::size_type i = 0; i < s.size(); ++i) {
+        char c = s[i];
+
+        //VERIFICA A ESTRIMG EM MAIÚCULO E MINÚSCULO, EU PODERIA FAZER DE OUTRA MANEIRA TBM 
+        switch (c) {
+            case 'a':
+            case 'A':
+            case 'e':
+            case 'E':
+            case 'i':
+            case 'I':
+            case 'o':
+            case 'O':
+            case 'u':
+            case 'U':
+                total_vogais++;
+                if (primeiro_indice == s.size()) {
+                    primeiro_indice = i;
+                }
+                break;
+            default:
+                break;
+        }
+    }
+    return primeiro_indice;
+}
+
+void testar_string(const std::string& str) {
+    std::string::size_type total = 0;
+    
+    std::cout << "Testando string: \"" << str << "\"\n";
+    std::string::size_type primeiro_idx = busca_vogal_e_conta(str, total);
+
+    std::cout << " > Total de vogais: " << total << "\n";
+    std::cout << " > Índice da primeira vogal: " << primeiro_idx;
+
+    if (primeiro_idx == str.size()) {
+        std::cout << " (nenhuma vogal encontrada)";
+    }
+    std::cout << "\n----------------------------------------\n";
+}
+
+int main() {
+    testar_string("Hello World");
+    testar_string("Rhythm");
+    testar_string("Exemplo");
+    testar_string("");
+    testar_string("AEIOUaeiou");
+    return 0;
+}
